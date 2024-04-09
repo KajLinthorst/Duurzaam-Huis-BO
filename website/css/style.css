@@ -45,21 +45,29 @@ body{
 
 .widgetTop1{
     width: 34%;
-    height: 40rem;
+    height: 45rem;
     background-color: #161718;
 }
 
 .widgetTop1 > img{
-    height: 30vh;
+    height: 35vh;
     width: 15vw;
 
     display: block;
     margin: 5rem auto 0 8vw;
 }
 
+.widgetTop1 > h2{
+    font-size: 7rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 2rem;
+}
 .widgetTop2{
     width: 34%;
-    height: 40rem;
+    height: 45rem;
     background-color: #161718;
 
     background-image: url('../img/natuurfotoplaceholder.jpg');
@@ -100,6 +108,6 @@ body{
 
 .widgetTop3{
     width: 34%;
-    height: 40rem;
+    height: 45rem;
     background-color: #161718;
 }
