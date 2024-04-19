@@ -11,7 +11,7 @@ nav {
     height: 8rem;
     width: 100vw;
     background: rgb(77,139,30);
-    background: radial-gradient(circle, rgba(77,139,30,1) 0%, rgba(36,83,0,1) 100%);
+    background: radial-gradient(circle, #4d8b1e 0%, rgba(36,83,0,1) 100%);
     display: flex;
     align-items: center;
     text-align: center;
@@ -144,7 +144,7 @@ body{
     text-align: center;
     font-size: 2rem;
     position: relative;
-    cursor: pointer;
+
 }
 
 .weatherRow > h2 > span > h3 {
@@ -156,26 +156,6 @@ body{
     align-self: flex-end;
     justify-content: center;
 }
-
-.weatherRow > h2 > span:hover .backgroundWeekSpan {
-    opacity: 1  ;
-}
-
-
-/* FIX DIE BACKGROUND */
-.backgroundWeekSpan {
-    border-radius: 2rem;
-    width: 10rem;
-    height: 18rem; 
-    background-color: #3d3f42;
-    position: absolute;
-    bottom: -1rem; 
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0; 
-    transition: opacity 0.2s ease;
-}
-
 
 
 .widgetsMid{
@@ -240,17 +220,82 @@ body{
     background-color: #161718;
 }
 
-footer{
-    height: 30rem;
-    background-color: black;
+.weatherholder{
+    position: absolute;
 }
 
-footer > img{
+.widgetsBottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #202124;
+}
+
+.light{
+    background-color: #151517;
+    margin: 10%;
+    width: 80%;
+    height: 80%;
+    border-radius: 1rem;
+}
+
+footer {
+    color: #4d8b1e;
+    height: 20rem;
+    background-color: #161718;
+    background-size: cover;
+    width: 100%;
+    background-position: center 44rem; 
+}
+
+.footerTitle {
+    color: #4d8b1e;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    font-weight: 100;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+.footerWatermark {
+    position: absolute; 
+    right: 0;
+    padding-top: 12rem;
+    padding-left: 0rem;
+    padding-right: 1rem;
+}
+
+.socialButtons {
     display: flex;
     justify-content: center;
     align-items: center;
-    object-fit: fill;
+    height: 60%;
 }
-.weatherholder{
-    position: absolute;
+
+.socialButton {
+    background-color: #202020; /* Example background color, customize as needed */
+    color: white;
+    text-decoration: none;
+    letter-spacing: 0.2rem;
+    padding: 1rem 2rem;
+    margin: 0 1rem;
+    border-radius: 0.5rem;
+}
+
+.socialButton:hover {
+    background-color: #000000; /* Example hover color, customize as needed */
+}
+
+.logoFooter{
+    padding-left: 47vw;
+    height: 10rem;
+    width: 10rem;
+    padding-top: 3rem;
 }

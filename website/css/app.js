@@ -53,7 +53,7 @@ function UpdateLightsFromServer(data) {
     //console.log(lights);
     for (let i = 0; i < lights.length; ++i) {
         if (lights[i]) lightElems[i].style.backgroundColor = "green";
-        else lightElems[i].style.backgroundColor = "#151517";
+        else lightElems[i].style.backgroundColor = "red";
         
     }
 }

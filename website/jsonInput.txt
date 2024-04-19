@@ -1,0 +1,2 @@
+{"ldr":"833","dht11":{"temperature":"20.80","humidity":"54.00","heatIndex":"20.40"},"lights":[false,true,false]}
+
